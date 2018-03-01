@@ -1,0 +1,17 @@
+<div class="container">
+	<div class="titre">
+<center><h1>mails</h1></center>
+</div>
+<div class="cont">
+	<div class="link">
+		<% @mails.each do |mail| %>
+			<ul>
+					<li><a>
+<%= link_to mail.obect, mail, remote: true, id: 'content_link' %></a></li>
+			</ul>
+		<% end %>
+	</div>
+	<div class ="content">
+	</div>
+</div>
+</div>
